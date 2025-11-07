@@ -75,6 +75,7 @@ The script:
 
 After successful execution, the following directories and files are created:
 
+```
 output_actors/
   ├── output_10_combined.txt         # Model summary and diagnostics (quotes)
   ├── output_10_topic1_combined.pdf  # Topic 1 coefficient plot by actor
@@ -84,6 +85,7 @@ output_time/
   ├── output_10_combined.txt         # Model summary and diagnostics (articles)
   ├── output_10_topic1_combined.pdf  # Topic 1 coefficient plot by time
   ├── ...                            # Topics 2–5
+```
 
 Each `.txt` file includes:
 
@@ -98,3 +100,5 @@ Each `.txt` file includes:
 * **Number of topics:** Modify `K` in both `stm()` and `selectModel()` calls.
 * **Stopwords:** Update `customstopwords` to exclude domain-specific filler words.
 * **Reproducibility:** The random seed (`2112`) ensures consistent results.
+
+
