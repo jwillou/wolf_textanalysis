@@ -1,0 +1,143 @@
+A text corpus with 197 documents, and an 7783 word dictionary.
+A topic model with 5 topics, 197 documents and a 976 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: state, speci, protect, wildlif, servic, endang, delist 
+ 	 FREX: trump, scienc, wisconsin, esa, western, histor, habitat 
+ 	 Lift: analysi, improv, continent, biden, contigu, suitabl, network 
+ 	 Score: improv, trump, contigu, mexican, peer, suitabl, scientist 
+Topic 2 Top Words:
+ 	 Highest Prob: speci, delist, endang, feder, bill, wildlif, protect 
+ 	 FREX: republican, hous, democrat, bill, water, elk, vote 
+ 	 Lift: man, democrat, water, hurt, republican, vote, committe 
+ 	 Score: man, bill, tester, elk, democrat, hous, republican 
+Topic 3 Top Words:
+ 	 Highest Prob: state, kill, manag, popul, hunt, livestock, wildlif 
+ 	 FREX: sheep, kill, counti, cattl, fwp, trap, livestock 
+ 	 Lift: counti, sheep, trapper, paid, harvest, sport, fwp 
+ 	 Score: counti, fwp, coyot, sheep, cattl, kill, tag 
+Topic 4 Top Words:
+ 	 Highest Prob: speci, manag, state, endang, delist, rule, feder 
+ 	 FREX: rider, molloy, settlement, judg, languag, agreement, simpson 
+ 	 Lift: baucus, settlement, languag, circuit, solut, lummi, rider 
+ 	 Score: baucus, rider, settlement, tester, simpson, budget, molloy 
+Topic 5 Top Words:
+ 	 Highest Prob: state, plan, manag, feder, wildlif, delist, fish 
+ 	 FREX: plan, offici, wyom, breed, bang, pair, least 
+ 	 Lift: gain, jackson, hall, consecut, bang, breed, pair 
+ 	 Score: gain, bang, breed, wyom, pair, plan, zone 
+[1] "#A measure of how often the top words in a topic appear together in the same documents."
+[1] "#Higher semantic coherence usually indicates that a topic is more meaningful and interpretable."
+[1]  -9.080791 -26.695905 -21.541585 -18.978145  -7.529012
+[1] "#A measure of how unique the top words in a topic are to that topic (i.e., how rarely they appear in other topics)."
+[1] "#High exclusivity means that the words defining a topic are not shared with other topics, which aids in distinguishing them."
+[1] 7.858680 7.554388 7.996671 8.581599 8.435724
+A topic model with 5 topics, 197 documents and a 976 word dictionary.
+[1] "state speci protect wildlif servic endang delist"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.time.stm, 
+    metadata = output.time$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+levelAfter   0.46152    0.02782  16.589  < 2e-16 ***
+levelBefore  0.09099    0.03072   2.962  0.00344 ** 
+levelDuring  0.07113    0.03534   2.013  0.04552 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+              Estimate Std. Error   t value     Pr(>|t|)   cats lower_ci_95 upper_ci_95
+levelAfter  0.46189238 0.03018322 15.302953 3.432999e-35  After 0.402733269   0.5210515
+levelBefore 0.08990061 0.03204849  2.805143 5.541557e-03 Before 0.027085572   0.1527157
+levelDuring 0.07184458 0.03578519  2.007662 4.606665e-02 During 0.001705609   0.1419835
+A topic model with 5 topics, 197 documents and a 976 word dictionary.
+[1] "speci delist endang feder bill wildlif protect"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.time.stm, 
+    metadata = output.time$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+levelAfter   0.12624    0.02001   6.309 1.86e-09 ***
+levelBefore  0.08610    0.02364   3.642 0.000348 ***
+levelDuring  0.13018    0.02677   4.862 2.40e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+              Estimate Std. Error  t value     Pr(>|t|)   cats lower_ci_95 upper_ci_95
+levelAfter  0.12743599 0.02069164 6.158816 4.139459e-09  After  0.08688038   0.1679916
+levelBefore 0.08495287 0.02129798 3.988777 9.405557e-05 Before  0.04320884   0.1266969
+levelDuring 0.12835269 0.02729137 4.703051 4.857500e-06 During  0.07486161   0.1818438
+A topic model with 5 topics, 197 documents and a 976 word dictionary.
+[1] "state kill manag popul hunt livestock wildlif"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.time.stm, 
+    metadata = output.time$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+levelAfter   0.15366    0.02490   6.170 3.90e-09 ***
+levelBefore  0.14547    0.02443   5.955 1.20e-08 ***
+levelDuring  0.12800    0.02993   4.277 2.97e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+             Estimate Std. Error  t value     Pr(>|t|)   cats lower_ci_95 upper_ci_95
+levelAfter  0.1521904 0.02468608 6.165030 4.005800e-09  After  0.10380571   0.2005752
+levelBefore 0.1467242 0.02681952 5.470801 1.371139e-07 Before  0.09415799   0.1992905
+levelDuring 0.1248632 0.03108341 4.017036 8.423062e-05 During  0.06393972   0.1857867
+A topic model with 5 topics, 197 documents and a 976 word dictionary.
+[1] "speci manag state endang delist rule feder"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.time.stm, 
+    metadata = output.time$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+levelAfter   0.12926    0.02456   5.263 3.74e-07 ***
+levelBefore  0.08846    0.02871   3.081  0.00236 ** 
+levelDuring  0.55076    0.03211  17.153  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+             Estimate Std. Error   t value     Pr(>|t|)   cats lower_ci_95 upper_ci_95
+levelAfter  0.1269319 0.02534253  5.008652 1.228520e-06  After  0.07726058   0.1766033
+levelBefore 0.0910154 0.02604395  3.494685 5.880316e-04 Before  0.03996927   0.1420615
+levelDuring 0.5516760 0.03391292 16.267429 4.268353e-38 During  0.48520667   0.6181453
+A topic model with 5 topics, 197 documents and a 976 word dictionary.
+[1] "state plan manag feder wildlif delist fish"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.time.stm, 
+    metadata = output.time$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+levelAfter   0.13146    0.02588   5.079 8.87e-07 ***
+levelBefore  0.58470    0.02666  21.933  < 2e-16 ***
+levelDuring  0.12274    0.03236   3.793 0.000199 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+             Estimate Std. Error   t value     Pr(>|t|)   cats lower_ci_95 upper_ci_95
+levelAfter  0.1308397 0.02506917  5.219146 4.600846e-07  After  0.08170411   0.1799753
+levelBefore 0.5900598 0.02746593 21.483339 3.465695e-53 Before  0.53622658   0.6438930
+levelDuring 0.1199813 0.03240809  3.702202 2.784765e-04 During  0.05646144   0.1835011
